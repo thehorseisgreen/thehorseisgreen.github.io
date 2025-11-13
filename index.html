@@ -2,70 +2,200 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>แนะนำตัว</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFILE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: 'Prompt', sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      font-family: "Sarabun", sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
+      background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+      color: #222;
+      line-height: 1.7;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 40px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      border-radius: 12px;
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(120deg, #2196f3, #21cbf3);
+      color: white;
+      border-radius: 0 0 50px 50px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+      box-shadow: 0 0 25px rgba(33, 203, 243, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 35px rgba(255,255,255,0.9);
     }
 
     h1 {
-      color: #00796b;
-      font-size: 2.5em;
+      margin-top: 20px;
+      font-size: 2.4em;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 25px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      color: #35a6ec;
+      border-left: 6px solid #4f46f0;
+      padding-left: 10px;
       margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 25px;
+    }
+
+    a {
+      color: #c2c931;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
       text-align: center;
-    }
-
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    p {
-      font-size: 1.2em;
-      line-height: 1.8;
-      text-align: justify;
-    }
-
-    .info {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 1em;
+      padding: 25px;
       color: #555;
+      background: #f0f0f0;
+      border-top: 2px solid #e0e0e0;
+      font-size: 0.9em;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+    @media (max-width: 600px) {
+      header img {
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: 1.9em;
+      }
+      section {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
-<body>
 
-  <div class="container">
-    <img src="https://i.imgur.com/0y0y0y0.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Faithailand.co.th%2Fcharacters%2Fcrayon-shinchan%2F&psig=AOvVaw0MwlL_1hv4A-zdv_PtA2_3&ust=1750405214181000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjCrNr9_I0DFQAAAAAdAAAAABAE" class="profile-pic">
-    <h1>สวัสดีค่ะ</h1>
-    <p>
-     ชื่อ นางสาว จิตรสุภา สีหา
-     อายุ 19
-     วันเกิด 30/12/2548
-      <br><br>
-     งานอดิเรก อ่านนิยาย ดูหนัง นอน
-       <br><br>
-      <a href = "https://github.com/thehorseisgreen">GitHub</a>
-    </p>
+<body>
+  <header>
+    <!-- ✅ รูปโปรไฟล์ -->
+    <img src="PIC/meeyou.jpg" alt="คำอธิบายรูป" width="100" height="50">
+    <h1>หน้าแรก GitHub.io ของนักศึกษา</h1>
+    <p>มหาวิทยาลัยราชภัฏอุดรธานี (สามพร้าว)</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. ส่วนแนะนำตัว (Introduction / Profile)</h2>
+      <ul>
+        <li>ชื่อ-นามสกุล : นางสาว จิตรสุภา สีหา</li>
+        <li>รหัสนักศึกษา : 67040233127</li>
+        <li>คณะ :วิทยาศาสตร์  มหาวิทยาลัย:ราชภัฏอุดรธานี  สาขา: เทคโนโลยีสารสนเทศ</li>
+        <li>ปีการศึกษา :นักศึกษาปี 3</li>
+        <li>ความสนใจพิเศษ :</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. ทักษะ (Skills)</h2>
+      <ul>
+        <li><b>Programming:</b>ภาษาC,Java, HTML/CSS, JavaScript</li>
+        <li><b>AI & Data:</b> SQL</li>
+        <li><b>Tools:</b> Git, VS Code, Figma, Google</li>
+        <li><b>Soft Skills:</b> การสื่อสาร, การทำงานเป็นทีม</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+      <ul>
+        <li>เว็บไซต์ที่เคยเขียน</li>
+        <a href="file:///D:/%E0%B8%9B%E0%B8%B51/jitsupaa/index01.html" target="_blank" class="button">> กดเพื่อดูเพิ่มเติม</a>
+        <li>ออกแบบ Figma </li>
+        <a href="https://www.figma.com/proto/1UE0PRjgs4FtrD3yFWWL1w/Untitled?node-id=11-43&starting-point-node-id=11%3A43" target="_blank" class="button">> กดเพื่อดูเพิ่มเติม</a>
+      </ul>
+      <p>🔗 <a href="#">ดูผลงานเพิ่มเติมใน GitHub</a></p>
+    </section>
+
+    <section>
+      <h2>4. การศึกษา (Education)</h2>
+      <p>
+       ประถมศึกษา - โรงเรียนอนุบาลเซกา
+       ป.1-6(2556-2560)</p>
+       <p>มัธยมตอนต้น - โรงเรียนเซกา
+        ม.1-3(2560-2563)
+       <p>มัธยมตอนปลาย - โรงเรียนเซกา
+        ม.4-6(2564-2566)
+       </p>
+       </p>
+    </section>
+
+    <section>
+      <h2>5. กิจกรรมและผลงานอื่น ๆ (Activities / Achievements)</h2>
+      <ul>
+        <li>ผู้เข้าร่วมอบรม “AI Chatbot”</li>
+        <li>เข้าร่วมกิจกรรมวังแดง </li>
+        <img src="PIC/GHH1.jpg" alt="คำอธิบายรูป" width="200" height="200">
+        <img src="PIC/GHH2.jpg" alt="คำอธิบายรูป" width="200" height="200">
+
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. ติดต่อ (Contact)</h2>
+      <p>
+        ✉️ Email: kookv30122548@gmail.com <br>
+        💻 GitHub: <a href="https://github.com/thehorseisgreen">github.com/yourname</a><br>
+        🔗 LinkedIn: <a href="#">linkedin.com/in/yourname</a><br>
+        📍 ที่อยู่: ต.เซกา อ.เซกา จังหวัดบึงกาฬ<br>
+        📞 เบอร์: 0953261026<br>
+      </p>
+    </section>
+
+    <section>
+      <h2>7. องค์ประกอบเสริม (Career Interest)</h2>
+      <p>อยากทำงานด้าน ux/ui และกราฟิก</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 GitHub.io Portfolio by jitsupaa | Designed with 💙
+  </footer>
+</body>
+</html>
